@@ -1,0 +1,43 @@
+.loading {
+  color: var(--grey);
+  padding-left: 56px;
+  line-height: 39px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.arrow,
+.circle {
+  position: absolute;
+  left: 0;
+  fill: var(--grey);
+}
+
+.arrow {
+  animation: right 3s linear infinite;
+}
+
+.circle {
+  animation: left 3s linear infinite;
+}
+
+@keyframes right {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes left {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

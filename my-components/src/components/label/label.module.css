@@ -1,0 +1,11 @@
+.label {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+  color: var(--secondary-dark);
+  font-family: var(--font-family-primary);
+}
+
+.required:after {
+  content: ' *';
+  color: var(--red-opacity);
+}

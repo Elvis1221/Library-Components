@@ -1,0 +1,74 @@
+.radio {
+  margin: 10px;
+}
+
+.stylesForBlock {
+  margin-bottom: 32px;
+}
+
+.otherCommentsBlock {
+  margin-bottom: 57px;
+}
+
+.wrapperLocationButtons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 800px;
+}
+
+.otherInput {
+  margin-bottom: 8px;
+}
+
+.planedDepartureFields,
+.dateFields {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  width: 330px;
+}
+
+.nameField {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.wrapperNotes {
+  display: flex;
+  flex-direction: column;
+  width: 640px;
+}
+
+.wrapperReadyToRelocate,
+.wrapperFamilyOption {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.wrapperMoveWith {
+  margin-bottom: 32px;
+}
+
+.label {
+  font-size: var(--font-size-m);
+  line-height: 20px;
+  color: var(--wild-blue-yonder);
+}
+
+.page {
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.contentWrapper {
+  padding: 32px 40px;
+  background: var(--bright-light);
+  font-family: var(--font-family-primary);
+  height: fit-content;
+}
+
+.otherFamilyInput {
+  margin-top: -25px;
+}

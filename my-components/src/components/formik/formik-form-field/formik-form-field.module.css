@@ -1,0 +1,6 @@
+.errorText {
+  position: relative;
+  margin: 3px;
+  color: var(--red-error);
+  font-size: small;
+}

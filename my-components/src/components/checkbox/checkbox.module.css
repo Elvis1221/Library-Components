@@ -1,0 +1,79 @@
+.container {
+  display: block;
+  position: relative;
+  padding-left: 32px;
+  line-height: 24px;
+  min-height: 24px;
+  cursor: pointer;
+}
+
+.container + .container {
+  margin-top: 20px;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  border-radius: 4px;
+  background-color: var(--bright-light);
+  border: 1px solid var(--secondary-light);
+  cursor: pointer;
+}
+
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.container:hover .checkmark,
+.container input:focus + .checkmark {
+  box-shadow: 0 0 6px var(--grey-light);
+}
+
+.checkmark:after {
+  top: -1px;
+  left: -1px;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: var(--nephrite-bright);
+  background-image: url('Vector.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container input:checked + .checkmark {
+  border: 1px solid var(--nephrite-bright);
+}
+
+.container input:checked + .checkmark:after {
+  display: block;
+  border: 1px solid var(--nephrite-bright);
+}
+
+.container input:disabled + .checkmark {
+  cursor: default;
+  border: 1px solid var(--grey);
+  background-color: var(--grey-background);
+}
+
+.container input:checked:disabled + .checkmark {
+  border: 1px solid var(--grey);
+}
+
+.container input:checked:disabled + .checkmark:after {
+  border: 1px solid var(--grey);
+  background-color: var(--grey);
+}

@@ -1,0 +1,31 @@
+.locationRadioButton label {
+  display: flex;
+  align-items: center;
+  min-height: 56px;
+  margin: 0 8px 8px 0;
+  padding: 16px 24px;
+  cursor: pointer;
+  color: var(--primary);
+  background: var(--primary-light);
+  border: 1px solid var(--secondary-light);
+  text-transform: none;
+  border-radius: 4px;
+}
+
+.locationRadioButton label:hover,
+.locationRadioButton label:focus {
+  border: 1px solid var(--secondary);
+}
+
+.locationRadioButton input[type='radio']:checked + label {
+  color: var(--bright-light);
+  background: var(--nephrite-bright);
+}
+
+.locationRadioButton input[type='radio'] {
+  display: none;
+}
+
+.titleLocations {
+  margin-left: 8px;
+}
