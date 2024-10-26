@@ -1,0 +1,5 @@
+const REPLACE_CHUNK_SIZE = 100;
+
+export {
+  REPLACE_CHUNK_SIZE,
+};
